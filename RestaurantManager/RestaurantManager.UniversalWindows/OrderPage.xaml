@@ -1,0 +1,29 @@
+﻿<Page
+    x:Class="RestaurantManager.UniversalWindows.OrderPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:RestaurantManager.UniversalWindows"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height=".2*" />
+            <RowDefinition Height=".1*" />
+            <RowDefinition Height=".5*" />
+            <RowDefinition Height=".1*" />
+            <RowDefinition Height=".1*" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width=".5*" />
+            <ColumnDefinition Width=".25*" />
+            <ColumnDefinition Width=".25*" />
+        </Grid.ColumnDefinitions>
+
+        <TextBlock Text="Special Requests:" VerticalAlignment="Top" HorizontalAlignment="Left" Grid.Row="1" Grid.Column="1" />
+        <TextBlock Text="Order Items:" VerticalAlignment="Top" HorizontalAlignment="Left" Grid.Row="1" Grid.Column="2" />
+        <TextBlock Text="**Add to Order**" VerticalAlignment="Center" HorizontalAlignment="Center" Grid.Row="4" Grid.Column="0" />
+        <TextBlock Text="**Submit Order**" VerticalAlignment="Center" HorizontalAlignment="Center" Grid.Row="4" Grid.Column="1" Grid.ColumnSpan="2" />
+    </Grid>
+</Page>
