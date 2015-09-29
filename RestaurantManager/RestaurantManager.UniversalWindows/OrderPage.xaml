@@ -7,6 +7,16 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
+    <Page.TopAppBar>
+        <AppBar>
+            <AppBarButton Label="Home" Click="AppBarHomeButton_Click">
+                <AppBarButton.Icon>
+                    <SymbolIcon Symbol="Home" />
+                </AppBarButton.Icon>
+            </AppBarButton>
+        </AppBar>
+    </Page.TopAppBar>
+
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
         <Grid.RowDefinitions>
             <RowDefinition Height=".2*" />
@@ -23,7 +33,9 @@
 
         <TextBlock Text="Special Requests:" VerticalAlignment="Top" HorizontalAlignment="Left" Grid.Row="1" Grid.Column="1" />
         <TextBlock Text="Order Items:" VerticalAlignment="Top" HorizontalAlignment="Left" Grid.Row="1" Grid.Column="2" />
-        <TextBlock Text="**Add to Order**" VerticalAlignment="Center" HorizontalAlignment="Center" Grid.Row="4" Grid.Column="0" />
-        <TextBlock Text="**Submit Order**" VerticalAlignment="Center" HorizontalAlignment="Center" Grid.Row="4" Grid.Column="1" Grid.ColumnSpan="2" />
+        <ListView Grid.Row="1" Grid.Column="0" Grid.RowSpan="3" Margin="10,14,10,6" />
+        <ListView Grid.Row="2" Grid.Column="2" Grid.RowSpan="2" Margin="10" />
+        <Button VerticalAlignment="Center" HorizontalAlignment="Center" Grid.Row="4" Grid.Column="0">Add to Order</Button>
+        <Button VerticalAlignment="Center" HorizontalAlignment="Center" Grid.Row="4" Grid.Column="1" Grid.ColumnSpan="2">Submit Order</Button>
     </Grid>
 </Page>
