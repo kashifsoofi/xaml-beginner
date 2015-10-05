@@ -22,7 +22,9 @@
             <RowDefinition Height=".9*" />
             <RowDefinition Height=".1*" />
         </Grid.RowDefinitions>
-
+        <GridView Grid.Row="0"
+                  ItemsSource="{Binding Path=OrderItems, Source={StaticResource DataManager}}">
+        </GridView>
         <Button VerticalAlignment="Center" HorizontalAlignment="Center" Grid.Row="1">Clear All Orders</Button>
     </Grid>
 </Page>
